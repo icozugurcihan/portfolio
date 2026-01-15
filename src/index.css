@@ -1,6 +1,14 @@
 /* =========================
    GLOBAL THEME
 ========================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -304,7 +312,6 @@ body.dark .hero-text p {
   line-height: 1.7;
   color: #6b7280;
 }
-
 
 
 /* =========================
