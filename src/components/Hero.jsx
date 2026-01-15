@@ -3,7 +3,7 @@ import { LanguageContext } from "../context/LanguageContext";
 import profile from "../data/profile.json";
 import GithubIcon from "../assets/icons/github.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
-import HeroImage from "../assets/hero/hero.png";
+import HeroImage from "../assets/hero/Hero.png";
 export default function Hero() {
     const { language } = useContext(LanguageContext);
 
