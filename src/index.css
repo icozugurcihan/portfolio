@@ -415,11 +415,11 @@ body.dark .project-tag {
 ========================= */
 
 .profile {
-    padding: 80px 120px;
+    padding: 80px 160px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 120px;
-    max-width: 1200px;
+    ;
     margin: 0 auto;
 }
 
