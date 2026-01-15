@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "TR": "Frontend",
+      "EN": "Frontend"
+    },
+    "description": {
+      "TR": "HTML, CSS, React ile arayüz geliştirme",
+      "EN": "Building interfaces with HTML, CSS and React"
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "TR": "Backend",
+      "EN": "Backend"
+    },
+    "description": {
+      "TR": "Node.js ve REST API geliştirme",
+      "EN": "Developing REST APIs with Node.js"
+    }
+  }
+]

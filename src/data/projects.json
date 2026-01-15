@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "TR": "Workintech",
+      "EN": "Workintech"
+    },
+    "description": {
+      "TR": "Modern web teknolojileriyle geliştirilmiş eğitim platformu.",
+      "EN": "An education platform built with modern web technologies."
+    },
+    "image": "/images/workintech.png",
+    "tech": ["react", "redux", "axios"],
+    "github": "https://github.com/",
+    "live": "https://example.com"
+  },
+  {
+    "id": 2,
+    "title": {
+      "TR": "Random Jokes",
+      "EN": "Random Jokes"
+    },
+    "description": {
+      "TR": "API kullanarak rastgele şakalar sunan eğlenceli bir uygulama.",
+      "EN": "A fun application that serves random jokes using an API."
+    },
+    "image": "/images/random-jokes.png",
+    "tech": ["react", "redux", "axios"],
+    "github": "https://github.com/",
+    "live": "https://example.com"
+  },
+  {
+    "id": 3,
+    "title": {
+      "TR": "Journey",
+      "EN": "Journey"
+    },
+    "description": {
+      "TR": "Kullanıcı deneyimi odaklı modern landing page tasarımı.",
+      "EN": "A modern landing page focused on user experience."
+    },
+    "image": "/images/journey.png",
+    "tech": ["react", "redux", "axios"],
+    "github": "https://github.com/",
+    "live": "https://example.com"
+  }
+]

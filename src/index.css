@@ -1,0 +1,598 @@
+/* =========================
+   GLOBAL THEME
+========================= */
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+}
+.skills,
+.projects,
+.profile {
+    position: relative;
+}
+
+.skills::before,
+.projects::before,
+.profile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 120px;
+    right: 120px;
+    height: 1px;
+    background-color: #6b5cff;
+    opacity: 0.6;
+}
+
+/* =========================
+   HEADER (DESIGN MATCH)
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+    
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+}
+
+/* Divider */
+.divider {
+    opacity: 0.4;
+}
+
+/* Language button */
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #6b5cff;
+    font-weight: 500;
+}
+
+/* Theme switch */
+.theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/* Hire Me Button */
+.hire-btn {
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid #6b5cff;
+    background-color: transparent;
+    color: #6b5cff;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hire-btn:hover {
+    background-color: #6b5cff;
+    color: #ffffff;
+}
+/* Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #6b5cff;
+    border-radius: 999px;
+    transition: 0.3s;
+}
+
+
+
+.switch input:checked + .slider::before {
+    transform: translateX(18px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    padding: 80px 120px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 32px;
+    opacity: 0.85;
+}
+
+body.dark .hero-text p {
+    opacity: 0.8;
+}
+
+.hero-buttons .btn {
+    margin-right: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.hero-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f46e5;
+}
+
+/* SOLDAKİ ÇİZGİ */
+.hero-name::before {
+  content: "";
+  width: 48px;
+  height: 1.5px;
+  background-color: #4f46e5;
+  opacity: 0.8;
+}
+
+/* Hero buttons */
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Primary Hire Me */
+.hero-hire {
+    background-color: #6b5cff;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Outline buttons (Github / Linkedin) */
+
+.hero {
+    position: relative;
+}
+
+/* Divider line */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 120px;
+    right: 120px;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.hero-outline {
+    background-color: transparent;
+    color: #6b5cff;
+    border: 1px solid #6b5cff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hero-outline:hover {
+    background-color: #6b5cff;
+    color: #ffffff;
+}
+.hero-outline img {
+    width: 16px;
+    height: 16px;
+}
+
+.btn.primary {
+    background-color: #0a66c2;
+    color: #ffffff;
+}
+
+.btn.secondary {
+    border: 1px solid #0a66c2;
+    color: #0a66c2;
+}
+
+.hero-image {
+  width: 420px;
+  aspect-ratio: 1 / 1;
+}
+
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+    object-fit: cover;
+  object-position: center;
+  border-radius: 24px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+  padding: 96px 120px;
+}
+
+/* Skills başlığı */
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 56px;
+}
+
+/* Grid yapı */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+/* Skill kartı */
+.skill-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 16px;
+}
+
+.skill-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    padding: 80px 120px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+}
+
+/* Card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image */
+.project-image {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Title */
+.project-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4f46e5;
+    margin-bottom: 12px;
+}
+
+/* Description */
+.project-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+/* Tags */
+.project-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.project-tag {
+    padding: 4px 10px;
+    border: 1px solid #4f46e5;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #4f46e5;
+}
+
+/* Links */
+.project-links {
+    display: flex;
+    gap: 32px;
+    margin-top: auto;
+}
+
+.project-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #4f46e5;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark .project-description {
+    color: #cbd5e1;
+}
+
+body.dark .project-tag {
+    border-color: #818cf8;
+    color: #818cf8;
+}
+
+
+/* =========================
+   PROFILE SECTION
+========================= */
+
+.profile {
+    padding: 80px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+}
+
+/* Başlıklar */
+.profile .section-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+/* Sol taraf */
+.profile-left {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Liste */
+.profile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+}
+
+/* Label */
+.profile-list li span:first-child {
+    font-weight: 500;
+    color: #555;
+}
+
+/* Value */
+.profile-list li span:last-child {
+    font-weight: 400;
+}
+
+/* Sağ taraf */
+.profile-right {
+    max-width: 520px;
+}
+
+.profile-right p {
+    line-height: 1.7;
+    font-size: 15px;
+    color: #555;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark .profile-list li {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+body.dark .profile-list li span:first-child {
+    color: #aaa;
+}
+
+body.dark .profile-right p {
+    color: #ccc;
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 80px 120px 40px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sol taraf */
+.footer-left h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.footer-mail {
+    font-size: 18px;
+    font-weight: 500;
+    color: #e11d48;
+    text-decoration: underline;
+}
+
+/* Sağ taraf */
+.footer-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.footer-link.github {
+    color: #10b981;
+}
+
+.footer-link.linkedin {
+    color: #2563eb;
+}
+
+/* Alt kısım */
+.footer-bottom {
+    margin-top: 64px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark .footer-link {
+    color: #e5e7eb;
+}
+
+body.dark .footer-mail {
+    color: #fb7185;
+}
+
+body.dark .footer-bottom {
+    color: #9ca3af;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 24px;
+        text-align: center;
+    }
+
+    .skills,
+    .projects,
+    .profile,
+    .footer {
+        padding: 40px 24px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+
+    .profile {
+        padding: 40px 24px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .profile-right {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        margin-top: 32px;
+        width: 200px;
+    }
+        .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .footer-left h2 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "heroTitle": {
+    "TR": "Creative thinker\nMinimalism lover",
+    "EN": "Creative thinker\nMinimalism lover"
+  },
+  "heroDescription": {
+    "TR": "Merhaba, ben Almila. Modern ve kullanıcı odaklı frontend arayüzleri geliştiriyorum.",
+    "EN": "Hi, I’m Almila. I build modern and user-focused frontend interfaces."
+  },
+  "social": {
+    "github": "https://github.com/almila",
+    "linkedin": "https://linkedin.com/in/almila"
+  },
+  "personal": {
+    "birthDate": "24.03.1996",
+    "location": "Ankara",
+    "education": "Software Engineering",
+    "role": {
+      "TR": "Frontend Geliştirici",
+      "EN": "Frontend Developer"
+    }
+  },
+  "about": {
+    "TR": "Frontend tarafında kullanıcı deneyimini ön planda tutan, temiz ve sürdürülebilir arayüzler geliştirmeyi seviyorum.",
+    "EN": "I enjoy building clean and sustainable user interfaces with a strong focus on user experience."
+  }
+}
