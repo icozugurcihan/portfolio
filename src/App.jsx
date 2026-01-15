@@ -13,7 +13,6 @@ function App() {
             <Skills />
             <Profile />
             <Projects />
-            
             <Footer />
         </>
     );

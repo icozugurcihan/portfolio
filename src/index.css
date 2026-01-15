@@ -140,7 +140,7 @@ body.dark {
 
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 64px;
     padding: 80px 120px;
@@ -282,6 +282,7 @@ body.dark .hero-text p {
 
 .skills {
   padding: 96px 120px;
+  
 }
 
 /* Skills başlığı */
@@ -290,13 +291,16 @@ body.dark .hero-text p {
   font-weight: 700;
   color: #111827;
   margin-bottom: 56px;
+  padding-left: 60px
+  
 }
 
 /* Grid yapı */
 .skills-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
+    justify-content: space-around;
 }
 
 /* Skill kartı */
@@ -407,29 +411,26 @@ body.dark .project-tag {
 
 
 /* =========================
-   PROFILE SECTION
+   PROFILE
 ========================= */
 
 .profile {
     padding: 80px 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    gap: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Başlıklar */
-.profile .section-title {
-    font-size: 32px;
+/* Sol */
+.profile-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4f46e5;
     margin-bottom: 32px;
 }
 
-/* Sol taraf */
-.profile-left {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Liste */
 .profile-list {
     list-style: none;
     padding: 0;
@@ -437,13 +438,30 @@ body.dark .project-tag {
 }
 
 .profile-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 0;
-    border-bottom: 1px solid #e5e5e5;
-    font-size: 14px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    padding: 10px 0;
+    font-size: 15px;
 }
+
+.profile-list li span:first-child {
+    font-weight: 600;
+}
+
+/* Sağ */
+.profile-right p {
+    max-width: 420px;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+/* Dark mode */
+body.dark .profile-right p {
+    color: #cbd5e1;
+}
+
+/* Responsive */
+
 
 /* Label */
 .profile-list li span:first-child {

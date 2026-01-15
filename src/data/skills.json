@@ -20,5 +20,16 @@
       "TR": "Node.js ve REST API geliştirme",
       "EN": "Developing REST APIs with Node.js"
     }
+  },
+    {
+    "id": 3,
+    "title": {
+      "TR": "Backend",
+      "EN": "Backend"
+    },
+    "description": {
+      "TR": "Node.js ve REST API geliştirme",
+      "EN": "Developing REST APIs with Node.js"
+    }
   }
 ]

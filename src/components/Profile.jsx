@@ -5,38 +5,44 @@ import profile from "../data/profile.json";
 export default function Profile() {
     const { language } = useContext(LanguageContext);
 
-    const personal = profile.personal;
-    const about = profile.about?.[language];
-    const role = profile.personal?.role?.[language];
+    const { labels, personal, about } = profile;
 
     return (
         <section className="profile">
             <div className="profile-left">
-                <h2 className="section-title">Profile</h2>
+                <h2 className="section-title">
+                    {labels[language].profile}
+                </h2>
+
+                <h3 className="profile-subtitle">
+                    {labels[language].profile}
+                </h3>
 
                 <ul className="profile-list">
                     <li>
-                        <span>Birth Date:</span>
-                        <span>{personal?.birthDate || "-"}</span>
+                        <span>{labels[language].birthDate}</span>
+                        <span>{personal.birthDate}</span>
                     </li>
                     <li>
-                        <span>Location:</span>
-                        <span>{personal?.location || "-"}</span>
+                        <span>{labels[language].location}</span>
+                        <span>{personal.location}</span>
                     </li>
                     <li>
-                        <span>Education:</span>
-                        <span>{personal?.education || "-"}</span>
+                        <span>{labels[language].education}</span>
+                        <span>{personal.education}</span>
                     </li>
                     <li>
-                        <span>Role:</span>
-                        <span>{role || "-"}</span>
+                        <span>{labels[language].role}</span>
+                        <span>{personal.role[language]}</span>
                     </li>
                 </ul>
             </div>
 
             <div className="profile-right">
-                <h2 className="section-title">About Me</h2>
-                <p>{about || "-"}</p>
+                <h2 className="section-title">
+                    {labels[language].about}
+                </h2>
+                <p>{about[language]}</p>
             </div>
         </section>
     );

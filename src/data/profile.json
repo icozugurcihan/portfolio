@@ -11,6 +11,37 @@
     "github": "https://github.com/almila",
     "linkedin": "https://linkedin.com/in/almila"
   },
+    "labels": {
+    "TR": {
+      "profile": "Profil",
+      "about": "Hakkımda",
+      "birthDate": "Doğum tarihi",
+      "location": "İkamet Şehri",
+      "education": "Eğitim Durumu",
+      "role": "Tercih Ettiği Rol"
+    },
+    "EN": {
+      "profile": "Profile",
+      "about": "About Me",
+      "birthDate": "Birth Date",
+      "location": "Location",
+      "education": "Education",
+      "role": "Preferred Role"
+    }
+  },
+  "personal": {
+    "birthDate": "24.03.1996",
+    "location": "Ankara",
+    "education": "Software Engineering",
+    "role": {
+      "TR": "Frontend Geliştirici",
+      "EN": "Frontend Developer"
+    }
+  },
+  "about": {
+    "TR": "Frontend tarafında kullanıcı deneyimini ön planda tutan, temiz ve sürdürülebilir arayüzler geliştirmeyi seviyorum.",
+    "EN": "I enjoy building clean and sustainable user interfaces with a strong focus on user experience."
+  },
   "personal": {
     "birthDate": "24.03.1996",
     "location": "Ankara",
