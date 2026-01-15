@@ -490,7 +490,7 @@ body.dark .profile-right p {
 ========================= */
 
 body.dark .profile-list li {
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid #4f46e5;
 }
 
 body.dark .profile-list li span:first-child {
@@ -499,6 +499,9 @@ body.dark .profile-list li span:first-child {
 
 body.dark .profile-right p {
     color: #ccc;
+}
+body.dark .section-title{
+    color: #4f46e5
 }
 /* =========================
    FOOTER
