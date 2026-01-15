@@ -81,12 +81,60 @@ body.dark {
     font-weight: 500;
 }
 
-/* Theme switch */
-.theme-switch {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+/* =========================
+   THEME SWITCH (FIX)
+========================= */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 18px;
 }
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Track */
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: #e5e7eb; /* light mode */
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Knob */
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 2px;        /* 🔴 EKSİK OLAN BUYDU */
+    top: 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* ON state */
+.switch input:checked + .slider {
+    background-color: #6b5cff;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(18px);
+}
+
+/* Dark mode OFF */
+body.dark .slider {
+    background-color: #374151;
+}
+
 /* Hire Me Button */
 .hire-btn {
     padding: 8px 16px;
