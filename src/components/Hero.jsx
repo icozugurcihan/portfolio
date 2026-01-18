@@ -4,12 +4,21 @@ import profile from "../data/profile.json";
 import GithubIcon from "../assets/icons/github.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
 import HeroImage from "../assets/hero/Hero.png";
+import { sendContact } from "../api/contact";
 export default function Hero() {
     const { language } = useContext(LanguageContext);
 
     const title = profile.heroTitle[language];
     const description = profile.heroDescription[language];
 
+    const handleHireMe = async () => {
+    try {
+      const data = await sendContact();
+      console.log("API response:", data);
+    } catch (error) {
+      console.error("API error:", error);
+    }
+};
     return (
         <section className="hero">
             <div className="hero-text">
