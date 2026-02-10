@@ -3,26 +3,19 @@ import { LanguageContext } from "../context/LanguageContext";
 import profile from "../data/profile.json";
 import GithubIcon from "../assets/icons/github.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
-import HeroImage from "../assets/hero/Hero.png";
-import { sendContact } from "../api/contact";
+import HeroImage from "../assets/hero/hero.jpeg";
+
 export default function Hero() {
     const { language } = useContext(LanguageContext);
 
     const title = profile.heroTitle[language];
     const description = profile.heroDescription[language];
 
-    const handleHireMe = async () => {
-    try {
-      const data = await sendContact();
-      console.log("API response:", data);
-    } catch (error) {
-      console.error("API error:", error);
-    }
-};
+
     return (
         <section className="hero">
             <div className="hero-text">
-                <span className="hero-name">Almila Su</span>
+                <span className="hero-name">Uğur Cihan İçöz</span>
                 <h1>
                     {title.split("\n").map((line, index) => (
                         <span key={index}>
@@ -36,7 +29,8 @@ export default function Hero() {
 
                 
 
-                <div className="hero-buttons">
+                
+  <div className="hero-buttons">
 
 <a
   href={profile.social.github}

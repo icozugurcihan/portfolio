@@ -9,10 +9,10 @@ export default function Footer() {
                     </h2>
 
                     <a
-                        href="mailto:almilasucode@gmail.com"
+                        href="mailto:ugurcihanicoz@gmail.com"
                         className="footer-mail"
                     >
-                        👉 almilasucode@gmail.com
+                        👉 ugurcihanicoz@gmail.com
                     </a>
                 </div>
 
@@ -21,7 +21,7 @@ export default function Footer() {
                         Personal Blog
                     </a>
                     <a
-                        href="https://github.com/"
+                        href="https://github.com/icozugurcihan"
                         target="_blank"
                         rel="noreferrer"
                         className="footer-link github"
@@ -29,7 +29,7 @@ export default function Footer() {
                         Github
                     </a>
                     <a
-                        href="https://linkedin.com/"
+                        href="https://www.linkedin.com/in/u%C4%9Fur-cihan-i%C3%A7%C3%B6z-893005299/"
                         target="_blank"
                         rel="noreferrer"
                         className="footer-link linkedin"

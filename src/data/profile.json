@@ -4,12 +4,12 @@
     "EN": "Creative thinker\nMinimalism lover"
   },
   "heroDescription": {
-    "TR": "Merhaba, ben Almila. Modern ve kullanıcı odaklı frontend arayüzleri geliştiriyorum.",
-    "EN": "Hi, I’m Almila. I build modern and user-focused frontend interfaces."
+    "TR": "Merhaba, ben Cihan. Modern ve kullanıcı odaklı frontend arayüzleri geliştiriyorum.",
+    "EN": "Hi, I’m Cihan. I build modern and user-focused frontend interfaces."
   },
   "social": {
-    "github": "https://github.com/almila",
-    "linkedin": "https://linkedin.com/in/almila"
+    "github": "https://github.com/icozugurcihan",
+    "linkedin": "https://www.linkedin.com/in/u%C4%9Fur-cihan-i%C3%A7%C3%B6z-893005299/"
   },
     "labels": {
     "TR": {
@@ -30,7 +30,7 @@
     }
   },
   "personal": {
-    "birthDate": "24.03.1996",
+    "birthDate": "08.07.1997",
     "location": "Ankara",
     "education": "Software Engineering",
     "role": {
@@ -41,9 +41,9 @@
   "about": {
     "TR": "Frontend tarafında kullanıcı deneyimini ön planda tutan, temiz ve sürdürülebilir arayüzler geliştirmeyi seviyorum.",
     "EN": "I enjoy building clean and sustainable user interfaces with a strong focus on user experience."
-  },
+  }, 
   "personal": {
-    "birthDate": "24.03.1996",
+    "birthDate": "08.07.1997",
     "location": "Ankara",
     "education": "Software Engineering",
     "role": {
@@ -56,3 +56,4 @@
     "EN": "I enjoy building clean and sustainable user interfaces with a strong focus on user experience."
   }
 }
+ 
